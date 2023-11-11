@@ -27,67 +27,31 @@ int numero;
 printf("Ingrese el Numero u Ordinal: \n");
 scanf("%d", &numero);
 printf("-------------------------\n");
-if (numero == 0)
+switch (numero)
 {
+case LUNES:
     printf("El Dia es Lunes");
-}
-else
-{
-    if(numero == 1 )
-    {
-        printf("El Dia es Martes");
-    }
-    else
-    {
-        if (numero == 2)
-        {
-           printf("El Dia es Miercoles");
-        }
-        else
-        {
-            if (numero == 3)
-            {
-               printf("El Dia es Jueves");
-            }
-            else
-            {
-                if (numero == 4)
-                {
-                    printf("El Dia es Viernes");
-                }
-                else
-                {
-                    if (numero == 5)
-                    {
-                        printf("El Dia es Sabado");
-                    }
-                    else
-                    {
-                        if (numero == 6)
-                        {
-                            printf("El Dia es Domingo");
-                        }
-                        else
-                        {
-                            if (numero > 6)
-                            {
-                                printf("El Dia no existe");
-                            }
-                            
-                        }
-                        
-                        
-                    }
-                    
-                }
-                
-                
-            }
-            
-            
-        }
-    }   
-}
-
+    break;
+    case MARTES:
+    printf("El Dia es Martes");
+    break;
+    case MIERCOLES:
+    printf("El Dia es Miercoles");
+    break;
+    case JUEVES:
+    printf("El Dia es Jueves");
+    break;
+    case VIERNES:
+    printf("El Dia es Viernes");
+    break;
+    case SABADO:
+    printf("El Dia es Sabado");
+    break;
+    case DOMINGO:
+    printf("El Dia es Domingo");
+    break;
+default:
+    printf("El Dia no Existe");
+    break;
 }
 }
