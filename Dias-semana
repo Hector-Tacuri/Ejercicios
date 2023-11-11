@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+enum Dias{LUNES = 0, MARTES = 1 , MIERCOLES = 2 , JUEVES = 3 , VIERNES = 4 , SABADO = 5 , DOMINGO = 6};
+
+int main()
+{
+
+int numero;
+
+printf("Ingrese el Numero u Ordinal: \n");
+scanf("%d", &numero);
+printf("-------------------------\n");
+
+switch (numero)
+{
+case LUNES:
+    printf("El Dia es Lunes");
+    break;
+    case MARTES:
+    printf("El Dia es Martes");
+    break;
+    case MIERCOLES:
+    printf("El Dia es Miercoles");
+    break;
+    case JUEVES:
+    printf("El Dia es Jueves");
+    break;
+    case VIERNES:
+    printf("El Dia es Viernes");
+    break;
+    case SABADO:
+    printf("El Dia es Sabado");
+    break;
+    case DOMINGO:
+    printf("El Dia es Domingo");
+    break;
+default:
+    printf("El Dia no Existe");
+    break;
+}
+}
