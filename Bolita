@@ -56,7 +56,7 @@ int main()
     printf("DESCUENTO %.2f", comprobante.porcentajeDscto);
     printf(" ==>\t%.2f\n", comprobante.valorDscto);
     printf("PAGO TOTAL ==>\t%.2f", comprobante.pagototal);
-
+    /* Añade un valor de z-index alto para asegurarse de que esté por encima de otros elementos */
 
     return 0;
 }
